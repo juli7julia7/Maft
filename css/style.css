@@ -1,1 +1,76 @@
 @import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:regular,500,600,700&display=swap');
+
+ :root{
+   --primery-color: #181817;
+   --secondary-color: #6F6F6F;
+   --accent-color: #F6D88C;
+   --common-white: #F8F3EC;
+   --main-font: 'Darker Grotesque', sans-serif;
+   --title-size: 65px;
+   --text-size: 22px;
+ }
+
+ 
+
+ 
+
+.header .container{
+  max-width: 1470px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(110, 110, 110, 0.3);
+}
+
+
+ 
+ .header{
+  background: #F8F3EC;
+  padding: 16px 55px 45px;  
+ }
+
+.navigation {
+  font-family: var(--main-font);
+  font-size: var(--text-size);
+}
+
+.navigation__list {
+  display: flex;
+  gap: 40px;
+
+}
+
+.navigation__item {}
+
+.navigation__link {
+  color: var(--secondary-color);
+}
+
+.logo {
+  color: var(--primery-color);
+  font-size: 40px;
+  font-family: var(--main-font);
+  font-weight: 700;
+
+}
+
+.logo__dot {
+  color: var(--accent-color);
+}
+
+
+
+
+.social__link:not(:last-of-type){
+  margin-right: 20px;
+}
+
+/* .header__line {
+  background: rgba(110, 110, 110, 0.3);
+  height: 2px;
+  width: 1470px;
+} */
