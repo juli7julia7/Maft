@@ -1,37 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:regular,500,600,700&display=swap');
 
- :root{
-   --primery-color: #181817;
-   --secondary-color: #6F6F6F;
-   --accent-color: #F6D88C;
-   --common-white: #F8F3EC;
-   --main-font: 'Darker Grotesque', sans-serif;
-   --title-size: 65px;
-   --text-size: 22px;
- }
-
- 
-
- 
-
-.header .container{
-  max-width: 1470px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid rgba(110, 110, 110, 0.3);
+:root {
+  --primery-color: #181817;
+  --secondary-color: #6F6F6F;
+  --accent-color: #F6D88C;
+  --common-white: #F8F3EC;
+  --main-font: 'Darker Grotesque', sans-serif;
+  --title-size: 65px;
+  --text-size: 22px;
 }
 
 
- 
- .header{
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* ==================== HEADER  ============================== */
+
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 55px 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(110, 110, 110, 0.3);
+}
+
+
+
+.header {
+  padding: 30px 15px 0 15px;
   background: #F8F3EC;
-  padding: 16px 55px 45px;  
- }
+
+}
 
 .navigation {
   font-family: var(--main-font);
@@ -65,12 +69,46 @@
 
 
 
-.social__link:not(:last-of-type){
+.social__link:not(:last-of-type) {
   margin-right: 20px;
 }
 
-/* .header__line {
-  background: rgba(110, 110, 110, 0.3);
-  height: 2px;
-  width: 1470px;
-} */
+/* ====================== HERO ========================== */
+.hero {
+  padding: 65px 0 55px;
+  background: var(--common-white);
+}
+
+.hero__title {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 71px;
+  color: var(--primery-color);
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.hero__text {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: var(--text-size);
+  line-height: 30px;
+  color: var(--secondary-color);
+  max-width: 370px;
+  margin-bottom: 40px;
+}
+
+.hero__btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 31px;
+  max-width: 200px;
+  width: 100%;
+  background: var(--accent-color);
+  border-radius: 16px;
+  padding: 22px 36px;
+}
+
+.hero__img {}
