@@ -12,7 +12,7 @@
 
 
 .container {
-  max-width: 1170px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 
@@ -79,6 +79,12 @@
   background: var(--common-white);
 }
 
+.hero .container{
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+}
+
 .hero__title {
   font-family: var(--main-font);
   font-weight: 600;
@@ -108,7 +114,24 @@
   width: 100%;
   background: var(--accent-color);
   border-radius: 16px;
-  padding: 22px 36px;
+  padding: 20px 36px;
+  text-transform: uppercase;
 }
 
-.hero__img {}
+.hero__img:first-child {
+  margin-right: 14px;
+}
+
+
+.hero__images{
+  font-size: 0;
+}
+
+.hero__block{
+}
+
+.hero__img{
+  width: 278px;
+  height: 653px;
+}
+
