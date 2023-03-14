@@ -25,6 +25,15 @@
   border-radius: 16px;
 }
 
+.text{
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: var(--text-size);
+  line-height: 26px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
 /* ==================== HEADER  ============================== */
 
 .header-container {
@@ -654,6 +663,10 @@
   border-right: none;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
+  color: #fff;
+  font-weight: 500;
+    font-size: var(--text-size);
+    line-height: 30px;
 }
 
 .form__input::placeholder {
@@ -677,31 +690,77 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
-.address {}
-
-.container {}
-
-.address__email {}
+.address {
+ display: flex;
+ justify-content: center;
+ gap: 130px;
+ max-width: 1016px;
+ margin: 0 auto;
+}
 
 .email {}
 
-.email__text {}
+.email__text, .calls__text, .lacation__text {
+  margin-bottom: 10px;
+  text-align: left;
+}
 
-.email__post {}
+
+.email__post, .calls__phone, .lacation__text-address {
+  font-family: var(--main-font);
+  font-size: 36px;
+    line-height: 38px;
+    text-align: left;
+    display: inline-block;
+    letter-spacing: -0.03em;
+}
+
+.calls__phone:not(:last-of-type){
+  margin-bottom: 8px;
+}
 
 .address__calls {}
 
-.calls {}
+.calls {
+text-align: left;
+}
 
-.calls__text {}
-
-.calls__phone {}
 
 .address__lacation {}
 
-.lacation {}
+.lacation {
+  max-width: 290px;
+  text-align: left;
+}
 
-.lacation__text {}
+/* =================   FOOTER ========================= */
+.footer {
+  background: var(--primery-color);
+  border-top: 2px solid rgba(243, 239, 228, 0.1);
+  padding: 30px 0 47px;
+ 
+}
+
+.footer-container{
+  max-width: 1157px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.license {
+  opacity: 0.3;
+}
+
+.footer__link:not(:last-of-type) {
+  margin-right: 32px;
+}
+.footer__link{
+  opacity: 0.4;
+}
+
+.text {}
+
