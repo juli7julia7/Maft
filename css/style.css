@@ -817,7 +817,15 @@ opacity: 0.7;
 
 .license {
   opacity: 0.3;
+  font-family: var(--main-font);
+    font-weight: 500;
+    font-size: var(--text-size);
+    line-height: 26px;
+    color: #FFFFFF;
 }
+
+
+
 
 .footer__link:not(:last-of-type) {
   margin-right: 32px;
