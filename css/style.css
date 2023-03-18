@@ -81,6 +81,11 @@
 .header {
   padding: 30px 15px 0 15px;
   background: #F8F3EC;
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50; */
 }
 
 .navigation {
