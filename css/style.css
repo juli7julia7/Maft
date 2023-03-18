@@ -24,29 +24,30 @@
   text-transform: uppercase;
   border-radius: 16px;
   cursor: pointer;
-  transition: 1s;
+  transition: opacity 1s;
 }
-.btn:hover{
+
+.btn:hover {
   opacity: 0.8;
 }
 
-.btn--yellow{
+.btn--yellow {
   font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 31px;
-    max-width: 200px;
-    width: 100%;
-    background: var(--accent-color);
-    border-radius: 16px;
-    padding: 20px 36px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.7s;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 31px;
+  max-width: 200px;
+  width: 100%;
+  background: var(--accent-color);
+  border-radius: 16px;
+  padding: 20px 36px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.7s;
 }
 
-.btn--yellow:hover{
-opacity: 0.7;
+.btn--yellow:hover {
+  opacity: 0.7;
 }
 
 .text {
@@ -59,7 +60,7 @@ opacity: 0.7;
   transition: all 1s;
 }
 
-.text:hover{
+.text:hover {
   opacity: 1;
 }
 
@@ -80,7 +81,6 @@ opacity: 0.7;
 .header {
   padding: 30px 15px 0 15px;
   background: #F8F3EC;
-
 }
 
 .navigation {
@@ -124,11 +124,11 @@ opacity: 0.7;
   margin-right: 20px;
 }
 
-.social__img{
+.social__img {
   transition: 0.7s;
 }
 
-.social__img:hover{
+.social__img:hover {
   transform: scale(1.2);
   background: var(--accent-color);
   border-radius: 50%;
@@ -167,14 +167,9 @@ opacity: 0.7;
   margin-bottom: 40px;
 }
 
-.hero__btn {
- 
-}
-
 .hero__img:first-child {
   margin-right: 14px;
 }
-
 
 .hero__images {
   font-size: 0;
@@ -184,7 +179,6 @@ opacity: 0.7;
   width: 278px;
   height: 653px;
 }
-
 
 /* ================= CLIENTS ============================== */
 .clients {
@@ -201,12 +195,11 @@ opacity: 0.7;
   cursor: pointer;
 }
 
-.clients__img:hover{
+.clients__img:hover {
   transform: scale(1.2);
 }
 
 .clients__block {
-  /* border-left: 5px solid #F6D88C; */
   padding: 0 30px;
   position: relative;
 }
@@ -304,13 +297,15 @@ opacity: 0.7;
   background: var(--common-white);
 }
 
-.description__img{
+.description__img {
   position: relative;
 }
-.description__img--main{
+
+.description__img--main {
   position: relative;
 }
-.description__img--small{
+
+.description__img--small {
   position: absolute;
   bottom: 17%;
   right: -41%;
@@ -369,7 +364,8 @@ opacity: 0.7;
   flex: 0 1 370px;
   transition: 1s;
 }
-.item-provide:hover{
+
+.item-provide:hover {
   transform: translateY(-30px);
 }
 
@@ -409,7 +405,7 @@ opacity: 0.7;
   text-decoration-line: underline;
 }
 
-.item-provide__link:hover{
+.item-provide__link:hover {
   opacity: 0.7;
 }
 
@@ -513,6 +509,8 @@ opacity: 0.7;
 .offer .container {
   text-align: center;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .offer__title {
@@ -551,19 +549,26 @@ opacity: 0.7;
   left: 0;
 }
 
-.decor__item{
+.decor__item {
   position: absolute;
 }
 
-.decor__item--1 {
-  background: url(../img/offer/shapes.svg) 0 0 no-repeat;
-  width: 96px;
-  height: 96px;
-  left: 5%;
-  top: 10%;
+.decor-item--1 {
+  background: url(../img/offer/decor1.png) 0 0 no-repeat;
+  width: 369px;
+  height: 350px;
+  left: 0;
+  top: 0;
 }
 
-.decor-item {}
+
+.decor-item--2 {
+  background: url(../img/offer/decor2.png) 0 0 no-repeat;
+  width: 425px;
+  height: 550px;
+  right: 0;
+  bottom: -33%;
+}
 
 /* ========================= BLOG  ========================== */
 .blog {
@@ -600,11 +605,12 @@ opacity: 0.7;
   color: #F6D88C;
   padding: 18px 31px 21px 45px;
 }
-.item-blog{
+
+.item-blog {
   transition: 1s;
 }
 
-.item-blog:hover{
+.item-blog:hover {
   transform: scale(1.1);
 }
 
@@ -653,7 +659,8 @@ opacity: 0.7;
   transition: 1s;
 }
 
-.item-blog__link:active, .item-blog__link:hover{
+.item-blog__link:active,
+.item-blog__link:hover {
   text-decoration-line: underline;
 }
 
@@ -779,17 +786,16 @@ opacity: 0.7;
   letter-spacing: -0.03em;
   transition: 0.7;
 }
+
 .email__post:hover,
 .calls__phone:hover,
-.lacation__text-address:hover{
+.lacation__text-address:hover {
   color: var(--accent-color);
 }
 
 .calls__phone:not(:last-of-type) {
   margin-bottom: 8px;
 }
-
-.address__calls {}
 
 .calls {
   text-align: left;
@@ -818,14 +824,11 @@ opacity: 0.7;
 .license {
   opacity: 0.3;
   font-family: var(--main-font);
-    font-weight: 500;
-    font-size: var(--text-size);
-    line-height: 26px;
-    color: #FFFFFF;
+  font-weight: 500;
+  font-size: var(--text-size);
+  line-height: 26px;
+  color: #FFFFFF;
 }
-
-
-
 
 .footer__link:not(:last-of-type) {
   margin-right: 32px;
